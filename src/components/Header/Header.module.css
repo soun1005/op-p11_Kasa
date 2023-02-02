@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 68px;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.homeNav {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.homeNav li {
+    margin-left: 2rem;
+    font-size: 24px;
+    color: var(--main-color);
+}

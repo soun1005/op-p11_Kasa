@@ -1,0 +1,23 @@
+.cardWrap {
+    width: 30%;
+    display: block;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.cardImage {
+    display: block;
+    height: 280px;
+    /* height: 340px; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cardTitle {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
