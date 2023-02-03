@@ -6,7 +6,7 @@ function LocationCards({ data }) {
     const { cover, title, id } = location;
     // console.log(cover)
     return (
-      <LocationCard image={cover} title={title} key={id} />
+      <LocationCard image={cover} title={title} id={id} key={id} />
     );
   });
 

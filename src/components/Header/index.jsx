@@ -6,9 +6,9 @@ function Header() {
   return (
     <header>
       <div className={style.logo}>
-
-        <img src={Logo} alt="logo" />
-
+        <NavLink to="/">
+          <img src={Logo} alt="logo" />
+        </NavLink>
       </div>
       <nav>
         <ul className={style.homeNav}>
