@@ -3,7 +3,7 @@ import useData from '../hooks/useData';
 import Banner from '../components/Banner';
 import mainBanner from '../assets/mainBanner.png';
 
-function Home() {
+export default function Home() {
   const data = useData();
   return (
     <>
@@ -12,5 +12,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

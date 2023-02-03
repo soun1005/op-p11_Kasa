@@ -1,6 +1,6 @@
 import style from './Banner.module.css';
 
-function Banner({ bannerImg, bannerTitle }) {
+export default function Banner({ bannerImg, bannerTitle }) {
   return (
     <div className={style.bannerWrap}>
       <div className={style.imageContainer}>
@@ -10,5 +10,3 @@ function Banner({ bannerImg, bannerTitle }) {
     </div>
   );
 }
-
-export default Banner;

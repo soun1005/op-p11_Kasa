@@ -1,7 +1,7 @@
 import LocationCard from '../LocationCard';
 import style from './LocationCards.module.css';
 
-function LocationCards({ data }) {
+export default function LocationCards({ data }) {
   const cardsList = data.map((location) => {
     const { cover, title, id } = location;
     // console.log(cover)
@@ -16,5 +16,3 @@ function LocationCards({ data }) {
     </div>
   );
 }
-
-export default LocationCards;

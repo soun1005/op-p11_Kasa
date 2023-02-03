@@ -2,7 +2,7 @@
 import { NavLink } from 'react-router-dom';
 import style from './LocationCard.module.css';
 
-function LocationCard({ image, title, id }) {
+export default function LocationCard({ image, title, id }) {
   return (
     <NavLink to={`details/${id}`}>
       <div className={style.cardWrap}>
@@ -12,5 +12,3 @@ function LocationCard({ image, title, id }) {
     </NavLink>
   );
 }
-
-export default LocationCard;
