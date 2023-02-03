@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/kasa_logo.png';
 import style from './Header.module.css';
 
@@ -11,8 +12,12 @@ function Header() {
       </div>
       <nav>
         <ul className={style.homeNav}>
-          <li>Accueil</li>
-          <li>A propos</li>
+          <li>
+            <NavLink className="homeLink" to="/"> Accueil </NavLink>
+          </li>
+          <li>
+            <NavLink className="homeLink" to="about">A Propos</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

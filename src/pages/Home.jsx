@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import LocationCards from '../components/LocationCards';
 import useData from '../hooks/useData';
 import Banner from '../components/Banner';
@@ -8,7 +7,6 @@ function Home() {
   const data = useData();
   return (
     <>
-      <Header />
       <Banner bannerImg={mainBanner} bannerTitle="Chez vous, partout et ailleurs" />
       <LocationCards data={data} />
     </>

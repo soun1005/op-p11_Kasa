@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
 
 :root {
   --main-color: #FF6060;
@@ -24,6 +24,17 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -38,3 +49,6 @@ header {
   margin-top: 40px;
 }
 
+.homeLink.active {
+  text-decoration: underline;
+}
