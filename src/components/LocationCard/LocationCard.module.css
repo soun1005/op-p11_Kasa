@@ -1,22 +1,21 @@
 .cardWrap {
-    display: block;
-    margin-bottom: 2rem;
-    position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .cardImage {
-    display: block;
-    max-width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    object-fit: cover;
+  display: block;
+  max-width: 340px;
+  height: 340px;
+  border-radius: 10px;
 }
 
 .cardTitle {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }

@@ -1,20 +1,21 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: aqua; */
-    height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 68px;
+  margin: 2rem 0;
 }
 
 .logo {
-    width: 12rem;
+  width: 12rem;
 }
 
 .homeNav {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .homeNav li {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }

@@ -2,16 +2,12 @@
   --main-color: #ff6060;
 }
 
-html {
-  box-sizing: border-box;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 body,
@@ -52,12 +48,9 @@ img {
 }
 
 /* basic margins for all pages */
-body {
+main {
   margin: 0 100px;
-}
-
-header {
-  margin-top: 40px;
+  max-width: 1400px;
 }
 
 .homeLink.active {
