@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.error,
+.errorMessage,
+.linkToHome {
+  color: var(--main-color);
+}
+
+.error {
+  font-size: 200px;
+  font-weight: 700;
+}
+
+.errorMessage {
+  font-size: 30px;
+}
+
+.linkToHome {
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}

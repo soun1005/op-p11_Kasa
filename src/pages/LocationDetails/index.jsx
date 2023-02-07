@@ -9,8 +9,6 @@ import CarouselGallery from '../../components/CarouselGallery';
 
 export default function LocationDetails() {
   const { locationId } = useParams();
-  // console.log(id);
-  // const location = locationData.find((locations) => locations.id === id);
   const matchedLocation = useDataId(locationId);
 
   const {
