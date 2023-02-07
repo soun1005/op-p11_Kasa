@@ -17,7 +17,11 @@ function App() {
       <main>
         <Routes>
           <Route index element={<Home />} />
-          <Route exact path="details/:id" element={<LocationDetails />} />
+          <Route
+            exact
+            path="details/:locationId"
+            element={<LocationDetails />}
+          />
           <Route exact path="about" element={<About />} />
         </Routes>
       </main>

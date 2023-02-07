@@ -1,0 +1,10 @@
+.dropDownWrap {
+  width: 100%;
+  display: flex;
+  background-color: red;
+}
+
+.description,
+.equitments {
+  width: 100%;
+}

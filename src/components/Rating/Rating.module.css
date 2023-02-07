@@ -1,0 +1,9 @@
+.star {
+  color: var(--main-color);
+  font-size: 2rem;
+  fill: var(--main-color);
+}
+
+.emptyStar {
+  fill: #e3e3e3;
+}

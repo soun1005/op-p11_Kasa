@@ -1,0 +1,38 @@
+.headerWrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--main-color);
+  margin-top: 1rem;
+}
+
+.titleWrap {
+  line-height: 1.4;
+}
+
+.titleWrap h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.titleWrap h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profileWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profileWrap span {
+  margin-right: 10px;
+}
+
+.profileWrap img {
+  width: 64px;
+  border-radius: 50%;
+}

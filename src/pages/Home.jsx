@@ -7,7 +7,11 @@ export default function Home() {
   const data = useData();
   return (
     <>
-      <Banner bannerImg={mainBanner} bannerTitle="Chez vous, partout et ailleurs" />
+      <Banner
+        bannerImg={mainBanner}
+        bannerTitle="Chez vous, partout et ailleurs"
+        customClassName="homeBanner"
+      />
       <LocationCards data={data} />
     </>
   );
