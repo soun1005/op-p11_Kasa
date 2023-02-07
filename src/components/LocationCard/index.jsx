@@ -4,7 +4,7 @@ import style from './LocationCard.module.css';
 
 export default function LocationCard({ image, title, id }) {
   return (
-    <NavLink to={`details/${id}`}>
+    <NavLink to={`${id}`}>
       <div className={style.cardWrap}>
         <img className={style.cardImage} src={image} alt={title} />
         <h2 className={style.cardTitle}>{title}</h2>

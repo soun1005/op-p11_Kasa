@@ -21,4 +21,6 @@
 
 .arrow {
   display: block;
+  cursor: pointer;
+  padding: 5px;
 }

@@ -1,9 +1,11 @@
 .cardContainer {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 3rem;
-    background-color: #F6F6F6;
-    border-radius: 25px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 3rem;
 }

@@ -22,6 +22,8 @@ export default function LocationDetails() {
     pictures,
   } = matchedLocation;
 
+  const equitmentList = equipments.map((equip) => <li key={equip}>{equip}</li>);
+
   return (
     <div>
       <CarouselGallery imageArray={pictures} description={description} />
@@ -43,7 +45,7 @@ export default function LocationDetails() {
         />
         <Dropdown
           title="Equipments"
-          paragraphe={equipments}
+          paragraphe={equitmentList}
           wrapClassName={style.dropDownWrap}
         />
       </div>

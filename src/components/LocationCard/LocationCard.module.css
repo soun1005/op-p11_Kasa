@@ -1,21 +1,27 @@
 .cardWrap {
-  display: block;
   margin-bottom: 2rem;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
 }
 
 .cardImage {
   display: block;
-  max-width: 340px;
-  height: 340px;
   border-radius: 10px;
+  aspect-ratio: 1/1;
 }
 
 .cardTitle {
+  width: 60%;
+  display: block;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   position: absolute;
-  bottom: 1rem;
+  top: 85%;
   left: 1rem;
+  overflow: hidden;
 }

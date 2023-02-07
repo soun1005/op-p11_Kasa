@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -18,14 +19,10 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route index element={<Home />} />
-            <Route
-              exact
-              path="details/:locationId"
-              element={<LocationDetails />}
-            />
+            <Route path="*" element={<Error404 />} />
+            <Route path="/" element={<Home />} />
+            <Route exact path=":locationId" element={<LocationDetails />} />
             <Route exact path="about" element={<About />} />
-            <Route exact path="*" element={<Error404 />} />
           </Routes>
         </BrowserRouter>
       </main>

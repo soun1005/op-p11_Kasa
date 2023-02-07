@@ -1,10 +1,9 @@
-.bannerWrap {
+.bannerContainer {
   position: relative;
-  text-align: cente;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.imageContainer {
+.imageWrap {
   background-color: #000;
   border-radius: 25px;
   height: 180px;
@@ -15,7 +14,7 @@
   width: 100%;
   height: 180px;
   border-radius: 25px;
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
 .bannerTitle {
@@ -27,6 +26,6 @@
   transform: translate(-50%, -50%);
   display: block;
   color: #fff;
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 500;
 }
