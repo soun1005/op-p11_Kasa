@@ -1,0 +1,14 @@
+.dropDownContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropDownWrap {
+  width: 47%;
+}
+
+.tagRateWrap {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}

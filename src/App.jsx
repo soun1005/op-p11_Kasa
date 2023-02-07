@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 
 // pages
-import Home from './pages/Home';
-import About from './pages/About';
+import Home from './pages/Home/index';
+import About from './pages/About/index';
 import LocationDetails from './pages/LocationDetails';
 // import Accommodation from './pages/Accommodation';
 // import Error from './pages/Error';

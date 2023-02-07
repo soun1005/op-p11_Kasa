@@ -7,12 +7,6 @@ export default function Ratings({ rating }) {
   const numberOfStars = parseInt(rating, 10);
   const maxRating = 5;
   const numberOfEmptyStar = maxRating - numberOfStars;
-  // const starIcons = (
-  //   <i className="fa-solid fa-star-sharp" className={style.star} />
-  // );
-  // const emptyStarIcons = (
-  //   <i className="fa-solid fa-star-sharp" className={style.emptyStar} />
-  // );
 
   const starIcons = [];
 

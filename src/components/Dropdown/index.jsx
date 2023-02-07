@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import style from './Dropdown.module.css';
 
-export default function Dropdown({ title, paragraphe }) {
+export default function Dropdown({ title, paragraphe, wrapClassName }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOnClick = () => {
@@ -14,7 +14,10 @@ export default function Dropdown({ title, paragraphe }) {
   const arrowDirection = isOpen ? 'down' : 'up';
 
   return (
-    <div className={style.dropdownContainer} onClick={handleOnClick}>
+    <div
+      className={`${style.dropdownWrap} ${wrapClassName}`}
+      onClick={handleOnClick}
+    >
       <div className={style.dropdownHeader}>
         <span>{title}</span>
         <i className={`fa-solid fa-chevron-${arrowDirection}`} />

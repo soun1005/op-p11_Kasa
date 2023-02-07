@@ -1,7 +1,7 @@
-import LocationCards from '../components/LocationCards';
-import useData from '../hooks/useData';
-import Banner from '../components/Banner';
-import mainBanner from '../assets/mainBanner.png';
+import LocationCards from '../../components/LocationCards';
+import useData from '../../hooks/useData';
+import Banner from '../../components/Banner';
+import mainBanner from '../../assets/mainBanner.png';
 
 export default function Home() {
   const data = useData();

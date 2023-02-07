@@ -63,9 +63,3 @@ header {
 .homeLink.active {
   text-decoration: underline;
 }
-
-.tagRateWrap {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-}

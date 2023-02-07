@@ -1,11 +1,11 @@
-.dropdownContainer {
+.dropdownWrap {
   margin-top: 1rem;
 }
 
 /* common style for header and box */
 .dropdownHeader,
 .dropdownBox {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
