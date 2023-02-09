@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/kasa_logo.png';
 import style from './Header.module.css';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export default function Header() {
   return (
     <header>
       <div className={style.logo}>
         <NavLink to="/">
-          <img src={Logo} alt="logo" />
+          <Logo fill="#FF6060" />
         </NavLink>
       </div>
       <nav>

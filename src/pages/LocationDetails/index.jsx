@@ -1,4 +1,5 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import useDataId from '../../hooks/useDataId';
 import DetailHeader from '../../components/DetailHeader';
 import Tags from '../../components/Tags';
@@ -9,7 +10,18 @@ import CarouselGallery from '../../components/CarouselGallery';
 
 export default function LocationDetails() {
   const { locationId } = useParams();
+  const navigate = useNavigate();
   const matchedLocation = useDataId(locationId);
+
+  useEffect(() => {
+    if (!matchedLocation) {
+      navigate('/404');
+    }
+  }, []);
+
+  if (!matchedLocation) {
+    return '';
+  }
 
   const {
     title,

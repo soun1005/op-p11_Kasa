@@ -1,41 +1,118 @@
 :root {
+  --fs-100: 10px;
+  --fs-200: 12px;
+  --fs-300: 14px;
+  --fs-400: 18px;
+  --fs-500: 24px;
+  --fs-600: 32px;
+  --fs-700: 40px;
+  --fs-body: var(--fs-400);
+  --fs-aboutDropDown: var(--fs-500);
+  --fs-banner: var(--fs-700);
   --main-color: #ff6060;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  object-fit: cover;
-  box-sizing: border-box;
+/* tablet version */
+@media (max-width: 768px) {
+  :root {
+    --fs-body: var(--fs-300);
+    --fs-aboutDropDown: var(--fs-400);
+  }
 }
 
+/* phone version */
+@media (max-width: 480px) {
+  :root {
+    --fs-body: var(--fs-200);
+    --fs-aboutDropDown: var(--fs-300);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Remove default margin */
 body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
 p,
-ol,
-ul {
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
-  padding: 0;
-  font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
 }
 
-ol,
-ul,
+ul[role='list'],
+ol[role='list'],
 li {
   list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 a {
   text-decoration: none;
   color: var(--main-color);
-  font-weight: 500;
   font-size: 24px;
 }
 
@@ -50,8 +127,8 @@ img {
 
 /* basic margins for all pages */
 main {
-  margin: 0 100px;
-  max-width: 1400px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .homeLink.active {

@@ -32,10 +32,15 @@ export default function CarouselGallery({ imageArray, desc }) {
     <div className={style.galleryContainer}>
       <img src={imageArray[currentIndex]} alt={desc} />
       {displayArrow && (
-        <div className={style.arrowContainer}>
-          <LeftArrow onClick={previous} className={style.arrow} />
-          <RightArrow onClick={next} className={style.arrow} />
-        </div>
+        <>
+          <div className={style.arrowContainer}>
+            <LeftArrow onClick={previous} className={style.arrow} />
+            <RightArrow onClick={next} className={style.arrow} />
+          </div>
+          <div className={style.indexContainer}>
+            <span>{`${currentIndex + 1}/${imageArray.length}`}</span>
+          </div>
+        </>
       )}
     </div>
   );

@@ -14,10 +14,10 @@
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 5px;
   color: #fff;
   padding: 6px 20px 6px 15px;
-  font-weight: 500;
   cursor: pointer;
 }
 

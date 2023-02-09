@@ -19,10 +19,14 @@ function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="*" element={<Error404 />} />
             <Route path="/" element={<Home />} />
-            <Route exact path=":locationId" element={<LocationDetails />} />
+            <Route
+              exact
+              path="location/:locationId"
+              element={<LocationDetails />}
+            />
             <Route exact path="about" element={<About />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </BrowserRouter>
       </main>

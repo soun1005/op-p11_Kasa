@@ -15,13 +15,13 @@
 }
 
 .cardTitle {
-  width: 60%;
+  width: 50%;
+  position: absolute;
   display: block;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  position: absolute;
-  top: 85%;
   left: 1rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 }

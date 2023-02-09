@@ -24,3 +24,11 @@
   cursor: pointer;
   padding: 5px;
 }
+
+.indexContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}

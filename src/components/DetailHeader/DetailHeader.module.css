@@ -12,12 +12,10 @@
 
 .titleWrap h1 {
   font-size: 36px;
-  font-weight: 500;
 }
 
 .titleWrap h2 {
   font-size: 18px;
-  font-weight: 500;
 }
 
 .profileWrap {
@@ -25,7 +23,6 @@
   flex-direction: row;
   align-items: center;
   font-size: 18px;
-  font-weight: 500;
 }
 
 .profileWrap span {
