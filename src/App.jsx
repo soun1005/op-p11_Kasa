@@ -1,5 +1,5 @@
 /* eslint-disable object-curly-newline */
-import './App.css';
+import './assets/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -16,19 +16,21 @@ function App() {
   return (
     <>
       <main>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              exact
-              path="location/:locationId"
-              element={<LocationDetails />}
-            />
-            <Route exact path="about" element={<About />} />
-            <Route path="*" element={<Error404 />} />
-          </Routes>
-        </BrowserRouter>
+        <div className="container">
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route
+                exact
+                path="location/:locationId"
+                element={<LocationDetails />}
+              />
+              <Route exact path="about" element={<About />} />
+              <Route path="*" element={<Error404 />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
       </main>
       <footer>
         <Footer />

@@ -7,8 +7,14 @@
   width: 47%;
 }
 
-.tagRateWrap {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
+/* phone version */
+@media (max-width: 480px) {
+  .dropDownContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropDownWrap {
+    width: 100%;
+  }
 }

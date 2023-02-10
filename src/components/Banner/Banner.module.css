@@ -28,5 +28,36 @@
   transform: translate(-50%, -50%);
   display: block;
   color: #fff;
-  font-size: var(--fs-banner);
+  font-size: var(--fs-700);
+}
+
+@media (max-width: 480px) {
+  .bannerContainer {
+    margin-bottom: 1rem;
+  }
+
+  .bannerTitle {
+    position: absolute;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 500;
+    width: 90%;
+  }
+
+  .imageWrap,
+  .bannerImg {
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* galaxy fold folded */
+@media (max-width: 340px) {
+  .bannerTitle {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
 }

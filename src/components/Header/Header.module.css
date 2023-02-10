@@ -2,13 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: aqua; */
   height: 68px;
   margin: 2rem 0;
-}
-
-.logo {
-  width: 12rem;
 }
 
 .homeNav {
@@ -18,4 +13,32 @@ header {
 
 .homeNav li {
   margin-left: 2rem;
+}
+
+.homeNav li a {
+  font-size: var(--fs-500);
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 54px;
+    margin: 10px 0;
+  }
+  .homeNav li {
+    margin-left: 1rem;
+  }
+}
+
+/* galaxy fold folded */
+@media (max-width: 340px) {
+  .homeNav li a {
+    font-size: var(--fs-200);
+  }
+  .logo {
+    width: 70px;
+  }
+
+  header {
+    margin: 6px 0;
+  }
 }

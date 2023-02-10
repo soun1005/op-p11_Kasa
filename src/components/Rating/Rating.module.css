@@ -1,9 +1,25 @@
 .star {
   color: var(--main-color);
-  font-size: 2rem;
   fill: var(--main-color);
+  font-size: var(--fs-star);
 }
 
 .emptyStar {
   fill: #e3e3e3;
+}
+
+/* tablet version */
+@media (max-width: 768px) {
+  .star,
+  .emptyStar {
+    width: 20px;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .star,
+  .emptyStar {
+    width: 15px;
+  }
 }

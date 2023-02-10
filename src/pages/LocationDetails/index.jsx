@@ -2,8 +2,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import useDataId from '../../hooks/useDataId';
 import DetailHeader from '../../components/DetailHeader';
-import Tags from '../../components/Tags';
-import Ratings from '../../components/Rating';
 import Dropdown from '../../components/Dropdown';
 import style from './LocationDetails.module.css';
 import CarouselGallery from '../../components/CarouselGallery';
@@ -44,11 +42,10 @@ export default function LocationDetails() {
         location={location}
         name={host.name}
         picture={host.picture}
+        tagList={tags}
+        rating={rating}
       />
-      <div className={style.tagRateWrap}>
-        <Tags tagList={tags} />
-        <Ratings rating={rating} />
-      </div>
+
       <div className={style.dropDownContainer}>
         <Dropdown
           title="Description"

@@ -19,9 +19,29 @@
   position: absolute;
   display: block;
   color: #fff;
-  font-size: 14px;
+  font-size: var(--fs-300);
   font-weight: 600;
   left: 1rem;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+
+/* tablet version */
+@media (max-width: 768px) {
+  .cardWrap {
+    margin-bottom: 0;
+  }
+  .cardTitle {
+    font-size: 12px;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 13px;
+  }
+  .cardImage {
+    aspect-ratio: 5/4;
+  }
 }

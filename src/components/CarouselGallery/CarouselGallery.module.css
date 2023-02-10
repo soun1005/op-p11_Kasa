@@ -32,3 +32,31 @@
   text-align: center;
   color: #fff;
 }
+
+/* tablet version */
+@media (max-width: 768px) {
+  :root {
+    --fs-300: 12px;
+    --fs-400: 16px;
+    --fs-500: 18px;
+    --fs-600: 24px;
+    --fs-700: 30px;
+    --fs-800: 32px;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .galleryContainer img {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .arrowContainer svg {
+    width: 22px;
+  }
+
+  .indexContainer {
+    display: none;
+  }
+}

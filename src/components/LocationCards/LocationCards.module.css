@@ -9,3 +9,37 @@
   align-items: center;
   gap: 3rem;
 }
+
+/* small desktop version */
+@media (max-width: 1000px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+}
+
+/* tablet version */
+@media (max-width: 768px) {
+  .cardContainer {
+    margin-top: 1rem;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .cardContainer {
+    width: 100%;
+    margin-top: 1rem;
+    background: none;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+  }
+}

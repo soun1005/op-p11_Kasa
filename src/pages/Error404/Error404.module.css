@@ -28,11 +28,24 @@
 }
 
 .errorMessage {
-  font-size: 30px;
+  font-size: var(--fs-600);
 }
 
 .linkToHome {
-  font-size: 18px;
+  font-size: var(--fs-400);
   position: absolute;
   bottom: 0;
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .error {
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .errorMessage {
+    width: 90%;
+    text-align: center;
+  }
 }

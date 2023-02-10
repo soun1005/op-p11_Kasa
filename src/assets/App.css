@@ -5,26 +5,33 @@
   --fs-400: 18px;
   --fs-500: 24px;
   --fs-600: 32px;
-  --fs-700: 40px;
-  --fs-body: var(--fs-400);
-  --fs-aboutDropDown: var(--fs-500);
-  --fs-banner: var(--fs-700);
+  --fs-700: 36px;
+  --fs-800: 42px;
+  --fs-star: 2rem;
   --main-color: #ff6060;
 }
 
 /* tablet version */
 @media (max-width: 768px) {
   :root {
-    --fs-body: var(--fs-300);
-    --fs-aboutDropDown: var(--fs-400);
+    --fs-300: 12px;
+    --fs-400: 16px;
+    --fs-500: 18px;
+    --fs-600: 20px;
+    --fs-700: 22px;
+    --fs-800: 32px;
   }
 }
 
 /* phone version */
 @media (max-width: 480px) {
   :root {
-    --fs-body: var(--fs-200);
-    --fs-aboutDropDown: var(--fs-300);
+    --fs-300: 10px;
+    --fs-400: 12px;
+    --fs-500: 14px;
+    --fs-600: 16px;
+    --fs-700: 18px;
+    --fs-800: 28px;
   }
 }
 
@@ -41,6 +48,12 @@
   font: inherit;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  * {
+    font-weight: 400;
+  }
 }
 
 /* Remove default margin */
@@ -75,6 +88,10 @@ html {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+
+.container {
+  margin: 0 2rem;
 }
 
 a:not([class]) {
@@ -113,7 +130,6 @@ select {
 a {
   text-decoration: none;
   color: var(--main-color);
-  font-size: 24px;
 }
 
 a:hover {
@@ -125,12 +141,18 @@ img {
   height: auto;
 }
 
-/* basic margins for all pages */
 main {
   max-width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
 .homeLink.active {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0 1rem;
+  }
 }

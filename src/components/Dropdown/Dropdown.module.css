@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+/* header title */
+.dropdownHeader span {
+  font-size: var(--fs-400);
+}
+
 .dropdownBox {
   background-color: #f6f6f6;
   color: var(--main-color);
@@ -33,4 +38,5 @@
   display: block;
   width: 100%;
   word-wrap: break-word;
+  font-size: var(--fs-300);
 }

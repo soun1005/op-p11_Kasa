@@ -1,6 +1,9 @@
 .tagContainer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
 }
 
 .tagContainer span {
@@ -8,8 +11,39 @@
   width: auto;
   background-color: var(--main-color);
   border-radius: 10px;
-  font-size: 14px;
+  font-size: var(--fs-300);
   padding: 2px 26px;
   margin-right: 10px;
   color: #fff;
+}
+
+@media (max-width: 830px) {
+  /* .tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  } */
+
+  .tagContainer span {
+    font-size: 10px;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  /* .tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  } */
+
+  .tagContainer span {
+    border-radius: 5px;
+    font-size: var(--fs-300);
+    padding: 2px 18px;
+    margin-right: 5px;
+    color: #fff;
+  }
 }

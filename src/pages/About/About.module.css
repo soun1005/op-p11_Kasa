@@ -2,3 +2,16 @@
   width: 60%;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .aboutDropdownContainer {
+    width: 80%;
+  }
+}
+
+/* phone version */
+@media (max-width: 480px) {
+  .aboutDropdownContainer {
+    width: 100%;
+  }
+}
