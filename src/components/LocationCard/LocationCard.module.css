@@ -1,5 +1,4 @@
 .cardWrap {
-  margin-bottom: 2rem;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -28,9 +27,6 @@
 
 /* tablet version */
 @media (max-width: 768px) {
-  .cardWrap {
-    margin-bottom: 0;
-  }
   .cardTitle {
     font-size: 12px;
   }
