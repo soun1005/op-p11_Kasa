@@ -21,7 +21,7 @@ export default function Ratings({ rating }) {
   }
 
   return (
-    <div>
+    <div className={style.starWrap}>
       {starIcons}
       {emptyStarIcons}
     </div>

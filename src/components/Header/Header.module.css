@@ -22,7 +22,7 @@ header {
 @media (max-width: 480px) {
   header {
     height: 54px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .homeNav li {
     margin-left: 1rem;
@@ -37,7 +37,6 @@ header {
   .logo {
     width: 70px;
   }
-
   header {
     margin: 6px 0;
   }

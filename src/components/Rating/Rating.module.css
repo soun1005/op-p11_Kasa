@@ -18,6 +18,10 @@
 
 /* phone version */
 @media (max-width: 480px) {
+  .starWrap {
+    display: flex;
+    align-items: center;
+  }
   .star,
   .emptyStar {
     width: 15px;

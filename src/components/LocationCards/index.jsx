@@ -7,9 +7,9 @@ export default function LocationCards({ data }) {
     const { cover, title, id } = location;
     // console.log(cover)
     return (
-      <NavLink to={`location/${id}`}>
+      <NavLink to={`location/${id}`} key={id}>
         <div className={style.cardWrap}>
-          <img className={style.cardImage} src={cover} alt={title} key={id} />
+          <img className={style.cardImage} src={cover} alt={title} />
           <h2 className={style.cardTitle}>{title}</h2>
         </div>
       </NavLink>
