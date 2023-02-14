@@ -7,7 +7,7 @@
 }
 
 .titleTagContainer {
-  width: 80%;
+  width: 70%;
 }
 
 .titleWrap {
@@ -35,6 +35,7 @@
 }
 
 .profileWrap span {
+  text-align: end;
   margin-right: 10px;
 }
 
