@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
 import LocationDetails from './pages/LocationDetails';
-// import Accommodation from './pages/Accommodation';
 import Error404 from './pages/Error404/index';
 import Footer from './components/Footer';
 

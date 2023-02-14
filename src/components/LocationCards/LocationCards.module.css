@@ -10,6 +10,33 @@
   gap: 3rem;
 }
 
+.cardWrap {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardImage {
+  display: block;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+}
+
+.cardTitle {
+  width: 50%;
+  position: absolute;
+  display: block;
+  color: #fff;
+  font-size: var(--fs-300);
+  font-weight: 600;
+  left: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
 /* small desktop version */
 @media (max-width: 1000px) {
   .cardContainer {
@@ -27,6 +54,9 @@
     padding: 1rem;
     gap: 1.5rem;
   }
+  .cardTitle {
+    font-size: 12px;
+  }
 }
 
 /* phone version */
@@ -41,5 +71,11 @@
     flex-direction: column;
     padding: 0;
     gap: 1rem;
+  }
+  .cardTitle {
+    font-size: 13px;
+  }
+  .cardImage {
+    aspect-ratio: 5/4;
   }
 }
