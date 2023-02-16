@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import useDataId from '../../hooks/useDataId';
 import DetailHeader from '../../components/DetailHeader';
 import Dropdown from '../../components/Dropdown';
@@ -7,19 +7,33 @@ import style from './LocationDetails.module.css';
 import CarouselGallery from '../../components/CarouselGallery';
 
 export default function LocationDetails() {
+  // useParams catch the id that is used on URL
   const { locationId } = useParams();
   const navigate = useNavigate();
-  const matchedLocation = useDataId(locationId);
+
+  // useState with default value of an empty object
+  const [locations, setLocations] = useState({
+    title: '',
+    location: '',
+    host: { name: '', picture: '' },
+    rating: '',
+    tags: [],
+    description: '',
+    equipments: [],
+    pictures: [],
+  });
 
   useEffect(() => {
+    // matchedLocation is the data that is found by URL(=id of data)
+    const matchedLocation = useDataId(locationId);
     if (!matchedLocation) {
       navigate('/404');
+    } else {
+      // if there is data that matches ID
+      // use matchedLocation data instead of innitial value(which is 'locations')
+      setLocations(matchedLocation);
     }
   }, []);
-
-  if (!matchedLocation) {
-    return '';
-  }
 
   const {
     title,
@@ -30,7 +44,7 @@ export default function LocationDetails() {
     description,
     equipments,
     pictures,
-  } = matchedLocation;
+  } = locations;
 
   const equitmentList = equipments.map((equip) => <li key={equip}>{equip}</li>);
 
