@@ -7,11 +7,13 @@ import style from './LocationDetails.module.css';
 import CarouselGallery from '../../components/CarouselGallery';
 
 export default function LocationDetails() {
-  // useParams catch the id that is used on URL
+  // useParams get the URL (here URL is ID of data)
+  // useParams récupère l'URL (ici l'URL est l'ID des données)
   const { locationId } = useParams();
   const navigate = useNavigate();
 
   // useState with default value of an empty object
+  // useState avec la valeur par défaut d'un objet vide
   const [locations, setLocations] = useState({
     title: '',
     location: '',
@@ -23,14 +25,18 @@ export default function LocationDetails() {
     pictures: [],
   });
 
+  // to prevent empty page rendering instead of rendering error page
+  // pour empêcher le rendu de la page vide au lieu de rendre la page d'erreur
   useEffect(() => {
-    // matchedLocation is the data that is found by URL(=id of data)
+    // matchedLocation : data that is correspond to ID
     const matchedLocation = useDataId(locationId);
     if (!matchedLocation) {
       navigate('/404');
     } else {
-      // if there is data that matches ID
-      // use matchedLocation data instead of innitial value(which is 'locations')
+      // if there is data that matches ID,
+      // use matchedLocation data instead of innitial value of empty object(which is 'locations')
+      // s'il existe des données qui correspondent à l'ID,
+      // utiliser les données matchedLocation au lieu de la valeur initiale de l'objet vide
       setLocations(matchedLocation);
     }
   }, []);

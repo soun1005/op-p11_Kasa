@@ -1,12 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import style from './LocationCards.module.css';
 
-// called in App.jsx with json data
+// JSON data is passed in App.jsx
 export default function LocationCards({ data }) {
+  // map every data and return HTML dom with each data
+  // map les données et retourne le dom HTML avec chaque donnée
   const cardsList = data.map((location) => {
     const { cover, title, id } = location;
-    // console.log(cover)
+
     return (
+      // each page's URL set to be 'location/id'
+      // l'URL de chaque page est définie comme un 'location/id'.
       <NavLink to={`location/${id}`} key={id}>
         <div className={style.cardWrap}>
           <img className={style.cardImage} src={cover} alt={title} />

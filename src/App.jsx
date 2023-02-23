@@ -26,6 +26,8 @@ function App() {
                 element={<LocationDetails />}
               />
               <Route exact path="about" element={<About />} />
+              {/* if nothing matches the path above, navigate to error page */}
+              {/* si rien ne correspond au path ci-dessus, naviguer vers la page d'erreur */}
               <Route path="*" element={<Error404 />} />
             </Routes>
           </BrowserRouter>
