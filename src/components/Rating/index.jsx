@@ -1,5 +1,3 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable no-plusplus */
 import style from './Rating.module.css';
 import { ReactComponent as StarIcon } from '../../assets/star.svg';
 

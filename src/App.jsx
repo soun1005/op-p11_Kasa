@@ -1,4 +1,3 @@
-/* eslint-disable object-curly-newline */
 import './assets/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

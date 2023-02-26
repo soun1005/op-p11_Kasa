@@ -1,4 +1,3 @@
-/* eslint-disable object-curly-newline */
 import style from './DetailHeader.module.css';
 import Tags from '../Tags/index';
 import Ratings from '../Rating/index';

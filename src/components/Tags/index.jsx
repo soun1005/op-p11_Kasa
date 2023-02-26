@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import style from './Tags.module.css';
 
 export default function Tags({ tagList }) {
